@@ -34,11 +34,6 @@ let wishes = [
     name: "Anoushka",
   },
   {
-    id: 6,
-    wish: " fly and touch the sky wish you a very happy birthday 🎁 purnima",
-    name:"A M T"
-  },
-  {
     id: 7,
     wish: "Happy Birthday Purnima",
     name: "Kamal",
