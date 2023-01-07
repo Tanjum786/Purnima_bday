@@ -1,38 +1,113 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Lobster;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+body {
+  background: #008888;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  position: relative;
+  left: 0;
+  transition: all 2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:hover {
+  left: 1rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
   }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+
+    height: 100%;
+  }
+
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+  .text button {
+   
+    padding: 1rem 2.5rem;
+}
+}
+@media (max-width:320px){
+  .text button {
+   
+    padding: 1rem 2.5rem !important;
+}
+}
+
+
+img.birthday {
+  max-height: 40vh;
+}
+
+.text {
+  padding: 1em;
+}
+
+.text p {
+  font-size: 1.3rem;
+
+}
+
+.text button {
+  background-color: rgba(86, 235, 78, 0.733);
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+}
+
+.text .button {
+  text-decoration: none;
+  font-size: 1.3rem;
+
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
 }
