@@ -1,5 +1,5 @@
 import React from "react";
-import { image1, image2 } from "../Assets";
+import { image1 } from "../Assets";
 import "./bday.css";
 
 let wishes = [
@@ -56,7 +56,7 @@ let wishes = [
   {
     id: 8,
     name: "Suma",
-    images: image2,
+    wish: "Dear Purnima, Thank you for choosing happiness. Thank you for not giving up. Thank you for choosing NISWEY to be the place where you found your path wish you a great birthday and success all the year through! Warmth,",
   },
   {
     id: 9,
@@ -99,25 +99,25 @@ export const BirthdayWishes = () => {
           {wishes?.map((wishlist) => {
             return (
               <>
-                <div class="birthdayCard">
-                  <div class="cardFront">
-                    <p class="name color">{wishlist.name}</p>
-                    <h3 class="happy">HAPPY BIRTHDAY!</h3>
+                <div className="birthdayCard" >
+                  <div className="cardFront" >
+                    <p className="name color">{wishlist.name}</p>
+                    <h3 className="happy">HAPPY BIRTHDAY!</h3>
 
-                    <div class="balloons">
-                      <div class="balloonOne"></div>
-                      <div class="balloonTwo"></div>
-                      <div class="balloonThree"></div>
-                      <div class="balloonFour"></div>
+                    <div className="balloons">
+                      <div className="balloonOne"></div>
+                      <div className="balloonTwo"></div>
+                      <div className="balloonThree"></div>
+                      <div className="balloonFour"></div>
                     </div>
                   </div>
                   <div className="cardInside">
-                    <h3 class="back">HAPPY BIRTHDAY!</h3>
+                    <h3 className="back">HAPPY BIRTHDAY!</h3>
                     <p>{wishlist.wish}</p>
                     {wishlist.images ? (
                       <img src={wishlist.images} alt="" />
                     ) : null}
-                    <p class="name">{wishlist.name}</p>
+                    <p className="name">{wishlist.name}</p>
                   </div>
                 </div>
               </>
